@@ -6,16 +6,21 @@ public class Slide : MonoBehaviour
     //private FloatingJoystick _joystick;
 
     //чтобы не выходить за границы
-    private float _offsetSlide = 0.6f;
-    private float _currentPositionX = 0;
-    private float _speedSlide = 7;
-    private float difference = 0;
+    [Tooltip("Значение выхода за границы (от центра)")]
+    [SerializeField] private float _offsetSlide = 0.6f;
+    //private float _currentPositionX = 0;
+    [SerializeField] private float _speedSlide = 7;
+    //делитель, чтобы корректировать скорость перемещения персонажа, иначе получается 1:1
+    //и пермещение по плоскости = скорость света в вакууме
+    private int _divider = 200;
+    private float _difference;
 
     private float? lastMousePoint = null;
 
     private void Start()
     {
         //_joystick = FindObjectOfType<FloatingJoystick>();
+        _difference = 0;
     }
     private void Update()
     {
@@ -36,8 +41,12 @@ public class Slide : MonoBehaviour
         }
         if (lastMousePoint != null)
         {
-            difference = Input.mousePosition.x - lastMousePoint.Value;
-            transform.localPosition = new Vector3(Mathf.Clamp(transform.localPosition.x + difference/700, -0.7f, 0.7f), transform.localPosition.y, transform.localPosition.z);
+            _difference = Input.mousePosition.x - lastMousePoint.Value;
+            Debug.Log(_difference);
+            //с границами
+            //transform.localPosition = new Vector3(Mathf.Clamp(transform.localPosition.x + _difference/700, -_offsetSlide, _offsetSlide), transform.localPosition.y, transform.localPosition.z);
+            //без границ
+            transform.localPosition = new Vector3(transform.localPosition.x + _difference / _divider, transform.localPosition.y, transform.localPosition.z);
             lastMousePoint = Input.mousePosition.x;
         }
 
