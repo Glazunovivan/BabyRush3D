@@ -6,12 +6,16 @@ using UnityEngine.UI;
 public class CoinsUI : MonoBehaviour
 {
     [SerializeField] private Text _amountText;
-    private Coins _coinsComponent;
+    [SerializeField] private Coins _coinsComponent;
+
     private void Awake()
     {
         FindObjectOfType<PlayerCollider>().coinTake += UpdateUI;
         _coinsComponent = FindObjectOfType<Coins>();
         _amountText.text = _coinsComponent.AmountCoins.ToString();
+
+        //загружаем данные из файла
+
     }
 
     private void UpdateUI()

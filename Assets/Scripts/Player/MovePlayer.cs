@@ -8,6 +8,7 @@ public class MovePlayer : MonoBehaviour
     private PathCreator _pathCreator;
     private float _distanceTravelled;
     private Slide _slideComponent;
+    private Coins _coinsComponent;
 
     [SerializeField] private float _speed;
     [SerializeField] private bool _isRun = false;
@@ -25,6 +26,9 @@ public class MovePlayer : MonoBehaviour
                                          _pathCreator.path.GetPointAtDistance(_distanceTravelled).z);
         _slideComponent = GetComponentInChildren<Slide>();
         _slideComponent.OnDisable();
+
+        //событие
+        FindObjectOfType<PlayerCollider>().finish += StopRun;
     }
 
     private void Update()
@@ -59,4 +63,8 @@ public class MovePlayer : MonoBehaviour
         _isRun = false;
     }
 
+    private void OnDestroy()
+    {
+        FindObjectOfType<PlayerCollider>().finish -= StopRun;
+    }
 }

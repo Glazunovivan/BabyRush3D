@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CanvasTip : MonoBehaviour
 {
-
     [Tooltip("—сылка на Player")]
     [SerializeField] private MovePlayer _movePlayer;
     [SerializeField] private GameObject _panelCounterCoins;
@@ -18,6 +17,7 @@ public class CanvasTip : MonoBehaviour
         
         _panelCounterCoins.SetActive(false);
     }
+
     public void StartGame(GameObject hidenPanel)
     {
         hidenPanel.SetActive(false);
@@ -28,5 +28,15 @@ public class CanvasTip : MonoBehaviour
     public void OpenShop()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(_shopSceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+    }
+
+    public void LoseGame()
+    {
+
+    }
+
+    public void WinGame()
+    {
+
     }
 }

@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class PlayerCollider : MonoBehaviour
 {
-    public delegate void OnCoinTake();
-    public event OnCoinTake coinTake;
+    public delegate void OnColliderEvent();
+    public event OnColliderEvent coinTake;
+    public event OnColliderEvent finish;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Coin"))
         {
-            TakeCoin();
+            TakeCoin(other.gameObject);
         }
 
         if (other.CompareTag("Finish"))
@@ -18,13 +19,15 @@ public class PlayerCollider : MonoBehaviour
         }
     }
 
-    private void TakeCoin()
+    private void TakeCoin(GameObject coin)
     {
         coinTake?.Invoke();
+        Destroy(coin);
     }
 
     private void Finish()
     {
         Debug.Log("Достигли финиша!");
+        finish?.Invoke();
     }
 }
