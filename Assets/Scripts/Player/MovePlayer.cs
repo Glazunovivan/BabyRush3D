@@ -63,7 +63,7 @@ public class MovePlayer : MonoBehaviour
         _isRun = false;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         FindObjectOfType<PlayerCollider>().finish -= StopRun;
     }

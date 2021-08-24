@@ -5,6 +5,8 @@ public class CanvasTip : MonoBehaviour
     [Tooltip("Ссылка на Player")]
     [SerializeField] private MovePlayer _movePlayer;
     [SerializeField] private GameObject _panelCounterCoins;
+    [SerializeField] private GameObject _panelLoseLevel;
+    [SerializeField] private GameObject _panelWinLevel;
 
     private const string _shopSceneName = "Shop";
     private void Start()
@@ -14,7 +16,8 @@ public class CanvasTip : MonoBehaviour
             Debug.LogWarning("Поле _movePlayer пустое. Добавьте ссылку на Player в поле MovePlayer для оптимизации");
             _movePlayer = FindObjectOfType<MovePlayer>();
         }
-        
+        FindObjectOfType<PlayerCollider>().finish += WinGame;
+
         _panelCounterCoins.SetActive(false);
     }
 
@@ -37,6 +40,17 @@ public class CanvasTip : MonoBehaviour
 
     public void WinGame()
     {
+        _panelCounterCoins.SetActive(false);
+        _panelWinLevel.SetActive(true);
+    }
 
+    public void NextLevel(string nameLevel)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nameLevel);
+    }
+
+    private void OnDisable()
+    {
+        FindObjectOfType<PlayerCollider>().finish -= WinGame;
     }
 }

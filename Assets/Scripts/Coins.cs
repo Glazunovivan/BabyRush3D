@@ -24,7 +24,7 @@ public class Coins : MonoBehaviour
         //подписка
         FindObjectOfType<PlayerCollider>().coinTake += AddCoin;
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         //отписка
         FindObjectOfType<PlayerCollider>().coinTake -= AddCoin;

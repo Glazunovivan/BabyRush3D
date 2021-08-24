@@ -375,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _amountText: {fileID: 2091540088294962035}
+  _coinsComponent: {fileID: 0}
 --- !u!1 &7659351471771012952
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,16 +608,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Game, Assembly-CSharp
+      - m_Target: {fileID: 1614884368841756924}
+        m_TargetAssemblyTypeName: CanvasTip, Assembly-CSharp
         m_MethodName: NextLevel
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7833552323957141819
@@ -923,7 +924,6 @@ GameObject:
   - component: {fileID: 7833552324559447806}
   - component: {fileID: 7833552324559447807}
   - component: {fileID: 7833552324559447776}
-  - component: {fileID: 7833552324559447804}
   - component: {fileID: 1614884368841756924}
   m_Layer: 5
   m_Name: Canvas
@@ -1016,25 +1016,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!95 &7833552324559447804
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7833552324559447777}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1614884368841756924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1048,7 +1029,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movePlayer: {fileID: 0}
-  _panelCounterCoins: {fileID: 0}
+  _panelCounterCoins: {fileID: 6832928389277715198}
+  _panelLoseLevel: {fileID: 7833552324539247358}
+  _panelWinLevel: {fileID: 7833552324178352770}
 --- !u!1 &7833552324804975978
 GameObject:
   m_ObjectHideFlags: 0
