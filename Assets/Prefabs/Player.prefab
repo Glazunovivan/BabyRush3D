@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 1
-  _isRun: 1
+  _isRun: 0
 --- !u!1001 &7866367815420892415
 PrefabInstance:
   m_ObjectHideFlags: 0
