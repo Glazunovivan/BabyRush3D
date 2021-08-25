@@ -18,15 +18,16 @@ public class PlayerCollider : MonoBehaviour
             TakeCoin(other.gameObject);
         }
 
+        if (other.CompareTag("Cookie"))
+        {
+            TakeCookie(other.gameObject);
+        }
+
         if (other.CompareTag("Finish"))
         {
             Finish();
         }
 
-        if (other.CompareTag("Cookie"))
-        {
-            TakeCookie(other.gameObject);
-        }
     }
 
     private void TakeCoin(GameObject coin)

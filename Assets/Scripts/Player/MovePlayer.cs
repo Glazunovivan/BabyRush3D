@@ -8,7 +8,6 @@ public class MovePlayer : MonoBehaviour
     private PathCreator _pathCreator;
     private float _distanceTravelled;
     private Slide _slideComponent;
-    private Coins _coinsComponent;
 
     [SerializeField] private float _speed;
     [SerializeField] private bool _isRun = false;
