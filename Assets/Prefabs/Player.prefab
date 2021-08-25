@@ -91,6 +91,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1404859787901197592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164857923521809910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f9233dfb1f5da4fa95b691f4c34f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7866367815420892291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,18 +116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedSlide: 10
---- !u!114 &5736822241894942510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2164857923521809910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23f9233dfb1f5da4fa95b691f4c34f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4571749095599216163
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +946,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Baby boy@Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2b9f28efeda70274c82770fb276171d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: -790435773315590083, guid: 2b9f28efeda70274c82770fb276171d4,
         type: 3}

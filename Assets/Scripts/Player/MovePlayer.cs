@@ -15,6 +15,8 @@ public class MovePlayer : MonoBehaviour
     //для движения с rigidbody
     private Rigidbody _rigidbody;
 
+    private StatePlayer _statePlayer;
+
     private void Start()
     {
         _rigidbody = GetComponentInChildren<Rigidbody>();
@@ -25,7 +27,7 @@ public class MovePlayer : MonoBehaviour
                                          _pathCreator.path.GetPointAtDistance(_distanceTravelled).z);
         _slideComponent = GetComponentInChildren<Slide>();
         _slideComponent.OnDisable();
-
+        _statePlayer = GetComponentInChildren<StatePlayer>();
         //событие
         FindObjectOfType<PlayerCollider>().finish += StopRun;
     }
@@ -50,12 +52,14 @@ public class MovePlayer : MonoBehaviour
     {
         _isRun = true;
         _slideComponent.OnEnable();
+        _statePlayer.Run();
     }
     public void StopRun()
     {
         _rigidbody.velocity = new Vector3(0,0,0);
         _slideComponent.OnEnable();
         _isRun = false;
+        _statePlayer.Victory();
     }
     public void StopRunIntoObstacle()
     {
