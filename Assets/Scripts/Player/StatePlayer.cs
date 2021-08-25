@@ -15,6 +15,8 @@ public class StatePlayer : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        FindObjectOfType<PlayerCollider>().obstacle += Stunned;
+        FindObjectOfType<PlayerCollider>().finish += Victory;
     }
 
     public void Run()
@@ -35,5 +37,11 @@ public class StatePlayer : MonoBehaviour
     public void Stunned()
     {
         _animator.SetTrigger("Stunned");
+    }
+
+    private void OnDisable()
+    {
+        FindObjectOfType<PlayerCollider>().obstacle -= Stunned;
+        FindObjectOfType<PlayerCollider>().finish -= Victory;
     }
 }

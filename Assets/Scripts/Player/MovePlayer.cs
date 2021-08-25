@@ -30,6 +30,7 @@ public class MovePlayer : MonoBehaviour
         _statePlayer = GetComponentInChildren<StatePlayer>();
         //событие
         FindObjectOfType<PlayerCollider>().finish += StopRun;
+        FindObjectOfType<PlayerCollider>().obstacle += StopRunIntoObstacle;
     }
 
     private void Update()
@@ -39,6 +40,7 @@ public class MovePlayer : MonoBehaviour
             TransformPositionPlayer();
         }
     }
+
     private void TransformPositionPlayer()
     {
         _distanceTravelled +=  _speed * Time.deltaTime;
@@ -54,14 +56,15 @@ public class MovePlayer : MonoBehaviour
         _slideComponent.OnEnable();
         _statePlayer.Run();
     }
-    public void StopRun()
+
+    private void StopRun()
     {
         _rigidbody.velocity = new Vector3(0,0,0);
         _slideComponent.OnEnable();
         _isRun = false;
-        _statePlayer.Victory();
     }
-    public void StopRunIntoObstacle()
+
+    private void StopRunIntoObstacle()
     {
         _isRun = false;
     }
@@ -69,5 +72,6 @@ public class MovePlayer : MonoBehaviour
     private void OnDisable()
     {
         FindObjectOfType<PlayerCollider>().finish -= StopRun;
+        FindObjectOfType<PlayerCollider>().obstacle -= StopRunIntoObstacle;
     }
 }

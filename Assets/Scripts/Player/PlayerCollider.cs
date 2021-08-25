@@ -7,6 +7,7 @@ public class PlayerCollider : MonoBehaviour
     public event OnColliderEvent coinTake;
     public event OnColliderEvent cookieTake;
     public event OnColliderEvent finish;
+    public event OnColliderEvent obstacle;
 
     [SerializeField] private UnityEvent TakeCoinEvent;
     [SerializeField] private UnityEvent TakeCookieEvent;
@@ -26,6 +27,11 @@ public class PlayerCollider : MonoBehaviour
         if (other.CompareTag("Finish"))
         {
             Finish();
+        }
+
+        if (other.CompareTag("Obstacle"))
+        {
+            Obstacle();
         }
 
     }
@@ -49,5 +55,11 @@ public class PlayerCollider : MonoBehaviour
     {
         Debug.Log("Достигли финиша!");
         finish?.Invoke();
+    }
+
+    private void Obstacle()
+    {
+        Debug.Log("Ударились в стену :(");
+        obstacle?.Invoke();
     }
 }

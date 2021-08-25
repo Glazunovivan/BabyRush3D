@@ -13,7 +13,6 @@ public class ShopUI : MonoBehaviour
     
     }
 
-
     public void CloseShop()
     {
         UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync("Shop");
