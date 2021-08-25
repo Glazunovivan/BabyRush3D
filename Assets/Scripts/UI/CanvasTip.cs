@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CanvasTip : MonoBehaviour
@@ -38,10 +39,19 @@ public class CanvasTip : MonoBehaviour
     }
     public void NextLevel()
     {
+        //сохранение
+        FindObjectOfType<SaveSystem>().Save();
+        StartCoroutine(LoadLevel()) ;  
+    }
+
+    private IEnumerator LoadLevel()
+    {
         int numberLevel = int.Parse(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         numberLevel++;
+        yield return new WaitForSeconds(1);
         UnityEngine.SceneManagement.SceneManager.LoadScene(numberLevel.ToString());
     }
+
     public void ReloadLevel()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);

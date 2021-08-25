@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using UnityEngine;
-
 public class SaveSystem : MonoBehaviour
 {
     public SaveData SaveData = new SaveData();

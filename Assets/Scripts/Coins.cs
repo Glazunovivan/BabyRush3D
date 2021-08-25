@@ -24,13 +24,10 @@ public class Coins : MonoBehaviour
         //подписка
         FindObjectOfType<PlayerCollider>().coinTake += AddCoin;
     }
-    private void OnDisable()
+    private void OnDestroy()
     {
         //отписка
         FindObjectOfType<PlayerCollider>().coinTake -= AddCoin;
         Debug.Log("Стираем объект Coins");
-        //сохранение монет в файл, чтобы использовать их в магазине
-        _saveSystem.SaveData.Coins += AmountCoins;
-        _saveSystem.Save();
     }
 }
