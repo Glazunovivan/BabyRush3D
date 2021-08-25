@@ -181,6 +181,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 1
   _isRun: 0
+--- !u!1001 &4752533414523978864
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2904899924554678245}
+    m_Modifications:
+    - target: {fileID: 2097641175611798676, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175620065302, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631196628, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631196628, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631196628, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.353
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631196628, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631196628, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631196628, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631196628, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631196628, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097641175631359476, guid: ba0ac58a3794d314782895aefd0c7678,
+        type: 3}
+      propertyPath: m_Name
+      value: CFX3_Hit_Misc_A
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba0ac58a3794d314782895aefd0c7678, type: 3}
 --- !u!1001 &7866367815420892415
 PrefabInstance:
   m_ObjectHideFlags: 0

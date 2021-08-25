@@ -1,10 +1,15 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerCollider : MonoBehaviour
 {
     public delegate void OnColliderEvent();
     public event OnColliderEvent coinTake;
+    public event OnColliderEvent cookieTake;
     public event OnColliderEvent finish;
+
+    [SerializeField] private UnityEvent TakeCoinEvent;
+    [SerializeField] private UnityEvent TakeCookieEvent;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,12 +22,26 @@ public class PlayerCollider : MonoBehaviour
         {
             Finish();
         }
+
+        if (other.CompareTag("Cookie"))
+        {
+            TakeCookie(other.gameObject);
+        }
     }
 
     private void TakeCoin(GameObject coin)
     {
         coinTake?.Invoke();
+        TakeCoinEvent.Invoke();
         Destroy(coin);
+    }
+
+
+    private void TakeCookie(GameObject cookie)
+    {
+        cookieTake?.Invoke();
+        TakeCookieEvent.Invoke();
+        Destroy(cookie);
     }
 
     private void Finish()
