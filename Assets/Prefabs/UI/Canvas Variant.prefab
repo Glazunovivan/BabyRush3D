@@ -120,7 +120,7 @@ PrefabInstance:
     - target: {fileID: 7833552324559447777, guid: cbc808522f490fb4dbb09d87d1238557,
         type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Canvas Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7833552324559447805, guid: cbc808522f490fb4dbb09d87d1238557,
         type: 3}
@@ -226,6 +226,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833552324804975974, guid: cbc808522f490fb4dbb09d87d1238557,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1602706916796714250}
+    - target: {fileID: 7833552324804975974, guid: cbc808522f490fb4dbb09d87d1238557,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833552324804975974, guid: cbc808522f490fb4dbb09d87d1238557,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CanvasTip, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7833552324804975976, guid: cbc808522f490fb4dbb09d87d1238557,
         type: 3}

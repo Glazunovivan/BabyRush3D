@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,14 +6,11 @@ public class CoinsUI : MonoBehaviour
     [SerializeField] private Text _amountText;
     [SerializeField] private Coins _coinsComponent;
 
-    private void Awake()
+    private void Start()
     {
         FindObjectOfType<PlayerCollider>().coinTake += UpdateUI;
         _coinsComponent = FindObjectOfType<Coins>();
         _amountText.text = _coinsComponent.AmountCoins.ToString();
-
-        //загружаем данные из файла
-
     }
 
     private void UpdateUI()

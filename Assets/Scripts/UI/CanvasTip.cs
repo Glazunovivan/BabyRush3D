@@ -16,9 +16,13 @@ public class CanvasTip : MonoBehaviour
             Debug.LogWarning("Поле _movePlayer пустое. Добавьте ссылку на Player в поле MovePlayer для оптимизации");
             _movePlayer = FindObjectOfType<MovePlayer>();
         }
-        FindObjectOfType<PlayerCollider>().finish += WinGame;
-
         _panelCounterCoins.SetActive(false);
+        _panelLoseLevel.SetActive(false);
+        _panelWinLevel.SetActive(false);
+
+        //События
+        FindObjectOfType<PlayerCollider>().finish += WinGame;
+        FindObjectOfType<PlayerCollider>().obstacle += LoseGame;
     }
 
     public void StartGame(GameObject hidenPanel)
@@ -32,25 +36,32 @@ public class CanvasTip : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(_shopSceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
     }
-
-    public void LoseGame()
+    public void NextLevel()
     {
-
+        int numberLevel = int.Parse(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        numberLevel++;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(numberLevel.ToString());
+    }
+    public void ReloadLevel()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
-    public void WinGame()
+    private void LoseGame()
+    {
+        _panelCounterCoins.SetActive(false);
+        _panelLoseLevel.SetActive(true);
+    }
+
+    private void WinGame()
     {
         _panelCounterCoins.SetActive(false);
         _panelWinLevel.SetActive(true);
-    }
-
-    public void NextLevel(string nameLevel)
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(nameLevel);
-    }
+    }    
 
     private void OnDisable()
     {
         FindObjectOfType<PlayerCollider>().finish -= WinGame;
+        FindObjectOfType<PlayerCollider>().obstacle -= LoseGame;
     }
 }
