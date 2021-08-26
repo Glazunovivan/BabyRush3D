@@ -1,17 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ShopUI : MonoBehaviour
 {
     [SerializeField] private Text _amountCoins;
 
-    private SaveSystem _saveSystem;
-    
     private void Start()
     {
-        _saveSystem = FindObjectOfType<SaveSystem>();
-        _amountCoins.text = _saveSystem.SaveData.Coins.ToString();
-    
+        _amountCoins.text = FindObjectOfType<SaveSystem>().SaveData.Coins.ToString();
     }
 
     public void CloseShop()

@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class StatePlayer : MonoBehaviour
 {
-    #region Animation
+    #region Hash Animation
     private Animator _animator;
     private int _idleHash = Animator.StringToHash("Idle");
     private int _joggingHash = Animator.StringToHash("Jogging");
@@ -17,6 +17,7 @@ public class StatePlayer : MonoBehaviour
         _animator = GetComponent<Animator>();
         FindObjectOfType<PlayerCollider>().obstacle += Stunned;
         FindObjectOfType<PlayerCollider>().finish += Victory;
+        FindObjectOfType<PlayerCollider>().cookieTake += Kick;
     }
 
     public void Run()
