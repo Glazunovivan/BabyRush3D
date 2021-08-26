@@ -4,14 +4,10 @@ public class Coins : MonoBehaviour
 {
     public uint AmountCoins { get; set; }
 
-    private SaveSystem _saveSystem;
-
     void Start()
     {
         //на старте уровня всегда ноль
         AmountCoins = 0;
-
-        _saveSystem = FindObjectOfType<SaveSystem>();
     }
 
     private void AddCoin()
@@ -24,10 +20,11 @@ public class Coins : MonoBehaviour
         //подписка
         FindObjectOfType<PlayerCollider>().coinTake += AddCoin;
     }
+
     private void OnDestroy()
     {
         //отписка
         FindObjectOfType<PlayerCollider>().coinTake -= AddCoin;
-        Debug.Log("Стираем объект Coins");
     }
+
 }

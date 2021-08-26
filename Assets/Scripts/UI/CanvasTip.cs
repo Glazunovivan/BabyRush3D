@@ -24,6 +24,7 @@ public class CanvasTip : MonoBehaviour
         //События
         FindObjectOfType<PlayerCollider>().finish += WinGame;
         FindObjectOfType<PlayerCollider>().obstacle += LoseGame;
+        FindObjectOfType<PlayerCollider>().fallIntoWater += LoseGame;
     }
 
     public void StartGame(GameObject hidenPanel)
@@ -39,16 +40,8 @@ public class CanvasTip : MonoBehaviour
     }
     public void NextLevel()
     {
-        //сохранение
-        FindObjectOfType<SaveSystem>().Save();
-        StartCoroutine(LoadLevel()) ;  
-    }
-
-    private IEnumerator LoadLevel()
-    {
         int numberLevel = int.Parse(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         numberLevel++;
-        yield return new WaitForSeconds(1);
         UnityEngine.SceneManagement.SceneManager.LoadScene(numberLevel.ToString());
     }
 
@@ -69,7 +62,7 @@ public class CanvasTip : MonoBehaviour
         _panelWinLevel.SetActive(true);
     }    
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         FindObjectOfType<PlayerCollider>().finish -= WinGame;
         FindObjectOfType<PlayerCollider>().obstacle -= LoseGame;

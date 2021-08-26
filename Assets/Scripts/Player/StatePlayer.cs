@@ -39,7 +39,7 @@ public class StatePlayer : MonoBehaviour
         _animator.SetTrigger("Stunned");
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         FindObjectOfType<PlayerCollider>().obstacle -= Stunned;
         FindObjectOfType<PlayerCollider>().finish -= Victory;

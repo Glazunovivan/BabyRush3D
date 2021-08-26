@@ -1,6 +1,6 @@
-﻿using PathCreation;
-using System;
+﻿using System;
 using UnityEngine;
+using PathCreation;
 
 [RequireComponent(typeof(Animator))]
 public class MovePlayer : MonoBehaviour

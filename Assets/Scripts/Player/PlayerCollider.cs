@@ -9,6 +9,9 @@ public class PlayerCollider : MonoBehaviour
     public event OnColliderEvent finish;
     public event OnColliderEvent obstacle;
 
+    public delegate void OnCollisionEvent();
+    public event OnCollisionEvent fallIntoWater;
+
     [SerializeField] private UnityEvent TakeCoinEvent;
     [SerializeField] private UnityEvent TakeCookieEvent;
 
@@ -33,8 +36,21 @@ public class PlayerCollider : MonoBehaviour
         {
             Obstacle();
         }
-
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Road"))
+        {
+            Debug.Log("Упали в воду");
+            fallIntoWater?.Invoke();
+            //отключаем слайд
+            GetComponent<Slide>().enabled = false;
+            //отвязываем камеру
+            GetComponentInChildren<Camera>().transform.SetParent(null);
+        }
+    }
+
 
     private void TakeCoin(GameObject coin)
     {
@@ -55,6 +71,8 @@ public class PlayerCollider : MonoBehaviour
     {
         Debug.Log("Достигли финиша!");
         finish?.Invoke();
+
+        FindObjectOfType<SaveSystem>().Save();
     }
 
     private void Obstacle()
