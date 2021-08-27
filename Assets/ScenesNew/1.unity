@@ -2047,6 +2047,7 @@ GameObject:
   - component: {fileID: 1132303751}
   - component: {fileID: 1132303750}
   - component: {fileID: 1132303749}
+  - component: {fileID: 1132303752}
   m_Layer: 0
   m_Name: Road Mesh Holder
   m_TagString: Untagged
@@ -2119,6 +2120,20 @@ Transform:
   m_Father: {fileID: 1018229841}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1132303752
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132303748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 705343551}
 --- !u!1001 &1134199695
 PrefabInstance:
   m_ObjectHideFlags: 0

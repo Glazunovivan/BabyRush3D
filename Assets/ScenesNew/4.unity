@@ -211,6 +211,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cookie
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 3f1c3384fc29a2143adf379416c2adac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cookie
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1c3384fc29a2143adf379416c2adac, type: 3}
 --- !u!4 &7120223 stripped
@@ -232,7 +237,7 @@ GameObject:
   - component: {fileID: 75128676}
   m_Layer: 0
   m_Name: bitcoin (29)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -611,7 +616,7 @@ GameObject:
   - component: {fileID: 232188611}
   m_Layer: 0
   m_Name: bitcoin (7)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1033,7 +1038,7 @@ GameObject:
   - component: {fileID: 531800990}
   m_Layer: 0
   m_Name: bitcoin (14)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1114,7 +1119,7 @@ GameObject:
   - component: {fileID: 595193789}
   m_Layer: 0
   m_Name: bitcoin (12)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1354,7 +1359,7 @@ GameObject:
   - component: {fileID: 879641894}
   m_Layer: 0
   m_Name: bitcoin (22)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1435,7 +1440,7 @@ GameObject:
   - component: {fileID: 919194656}
   m_Layer: 0
   m_Name: bitcoin (28)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1516,7 +1521,7 @@ GameObject:
   - component: {fileID: 926989437}
   m_Layer: 0
   m_Name: bitcoin (15)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1597,7 +1602,7 @@ GameObject:
   - component: {fileID: 980845868}
   m_Layer: 0
   m_Name: bitcoin (20)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1678,7 +1683,7 @@ GameObject:
   - component: {fileID: 995354223}
   m_Layer: 0
   m_Name: bitcoin (25)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1759,7 +1764,7 @@ GameObject:
   - component: {fileID: 1015558704}
   m_Layer: 0
   m_Name: bitcoin (31)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1873,7 +1878,7 @@ GameObject:
   - component: {fileID: 1110540597}
   m_Layer: 0
   m_Name: bitcoin (33)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1952,6 +1957,7 @@ GameObject:
   - component: {fileID: 1132303751}
   - component: {fileID: 1132303750}
   - component: {fileID: 1132303749}
+  - component: {fileID: 1132303752}
   m_Layer: 0
   m_Name: Road Mesh Holder
   m_TagString: Untagged
@@ -2024,6 +2030,20 @@ Transform:
   m_Father: {fileID: 1018229841}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1132303752
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132303748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 259140723}
 --- !u!1 &1194255056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,7 +2141,7 @@ GameObject:
   - component: {fileID: 1273982395}
   m_Layer: 0
   m_Name: bitcoin (8)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2202,7 +2222,7 @@ GameObject:
   - component: {fileID: 1292322611}
   m_Layer: 0
   m_Name: bitcoin (30)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2283,7 +2303,7 @@ GameObject:
   - component: {fileID: 1341428536}
   m_Layer: 0
   m_Name: bitcoin (18)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2364,7 +2384,7 @@ GameObject:
   - component: {fileID: 1376712718}
   m_Layer: 0
   m_Name: bitcoin (10)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2445,7 +2465,7 @@ GameObject:
   - component: {fileID: 1400557528}
   m_Layer: 0
   m_Name: bitcoin (23)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2526,7 +2546,7 @@ GameObject:
   - component: {fileID: 1410328505}
   m_Layer: 0
   m_Name: bitcoin (13)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2607,7 +2627,7 @@ GameObject:
   - component: {fileID: 1423822974}
   m_Layer: 0
   m_Name: bitcoin (9)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2688,7 +2708,7 @@ GameObject:
   - component: {fileID: 1437965977}
   m_Layer: 0
   m_Name: bitcoin (24)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2872,7 +2892,7 @@ GameObject:
   - component: {fileID: 1541366485}
   m_Layer: 0
   m_Name: bitcoin (32)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3022,7 +3042,7 @@ GameObject:
   - component: {fileID: 1577332025}
   m_Layer: 0
   m_Name: bitcoin (26)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3103,7 +3123,7 @@ GameObject:
   - component: {fileID: 1589276351}
   m_Layer: 0
   m_Name: bitcoin (16)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3404,7 +3424,7 @@ GameObject:
   - component: {fileID: 1762265949}
   m_Layer: 0
   m_Name: bitcoin (21)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3590,7 +3610,7 @@ GameObject:
   - component: {fileID: 1821204311}
   m_Layer: 0
   m_Name: bitcoin (19)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3671,7 +3691,7 @@ GameObject:
   - component: {fileID: 1848644458}
   m_Layer: 0
   m_Name: bitcoin (17)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3848,7 +3868,7 @@ GameObject:
   - component: {fileID: 2033616700}
   m_Layer: 0
   m_Name: bitcoin (11)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3929,7 +3949,7 @@ GameObject:
   - component: {fileID: 2079319387}
   m_Layer: 0
   m_Name: bitcoin (27)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
