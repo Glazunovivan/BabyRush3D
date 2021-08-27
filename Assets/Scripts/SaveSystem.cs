@@ -1,6 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+
+
 public class SaveSystem : MonoBehaviour
 {
     public SaveData SaveData = new SaveData();
@@ -30,7 +33,7 @@ public class SaveSystem : MonoBehaviour
     public void Save()
     {
         Debug.Log("Сохраняемся");
-        SaveData.Coins = FindObjectOfType<Coins>().AmountCoins;
+        SaveData.Coins += FindObjectOfType<Coins>().AmountCoins;
         File.WriteAllText(_path, JsonUtility.ToJson(SaveData));
     }
 
@@ -44,6 +47,7 @@ public class SaveSystem : MonoBehaviour
         else
         {
             SaveData.Coins = 0;
+            SaveData.IDPurchasedItems = new List<int>();
             Debug.Log("Файла нет");
             return false;
         }
@@ -78,5 +82,6 @@ public class SaveSystem : MonoBehaviour
 public class SaveData
 {
     public uint Coins;
+    public List<int> IDPurchasedItems;
 }
 

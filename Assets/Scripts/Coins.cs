@@ -6,7 +6,7 @@ public class Coins : MonoBehaviour
 
     void Start()
     {
-        //на старте уровня всегда ноль
+        //на старте уровня всегда ноль монет
         AmountCoins = 0;
     }
 
@@ -17,13 +17,11 @@ public class Coins : MonoBehaviour
 
     private void OnEnable()
     {
-        //подписка
         FindObjectOfType<PlayerCollider>().coinTake += AddCoin;
     }
 
     private void OnDestroy()
     {
-        //отписка
         FindObjectOfType<PlayerCollider>().coinTake -= AddCoin;
     }
 
