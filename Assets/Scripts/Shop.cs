@@ -70,8 +70,9 @@ public class Shop : MonoBehaviour
 
                 //добавить в сохранение
                 _saveData.IDPurchasedItems.Add(Items[lockedItemIndex[rand]].ID);
-
                 _saveData.Coins -= 250;
+                //сохранить
+                FindObjectOfType<SaveSystem>().Save();
                 Debug.Log("„то-то купили");
             }            
             Updating();
