@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 9110882}
   - component: {fileID: 9110881}
   - component: {fileID: 9110880}
+  - component: {fileID: 9110883}
   m_Layer: 0
   m_Name: bitcoin (55)
   m_TagString: Coin
@@ -205,6 +206,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -37.334003, z: 90.00001}
+--- !u!64 &9110883
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9110879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &102781291
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +231,7 @@ GameObject:
   - component: {fileID: 102781294}
   - component: {fileID: 102781293}
   - component: {fileID: 102781292}
+  - component: {fileID: 102781295}
   m_Layer: 0
   m_Name: bitcoin (46)
   m_TagString: Coin
@@ -286,6 +302,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &102781295
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102781291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &110157184
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +327,7 @@ GameObject:
   - component: {fileID: 110157187}
   - component: {fileID: 110157186}
   - component: {fileID: 110157185}
+  - component: {fileID: 110157188}
   m_Layer: 0
   m_Name: bitcoin (58)
   m_TagString: Coin
@@ -367,6 +398,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -4.399, z: 90.00001}
+--- !u!64 &110157188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110157184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &246891328
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +423,7 @@ GameObject:
   - component: {fileID: 246891331}
   - component: {fileID: 246891330}
   - component: {fileID: 246891329}
+  - component: {fileID: 246891332}
   m_Layer: 0
   m_Name: bitcoin (52)
   m_TagString: Coin
@@ -448,6 +494,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &246891332
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246891328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &266576960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -614,6 +674,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!4 &286893859 stripped
@@ -622,6 +687,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 286893858}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &286893860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 286893858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &286893861
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286893860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!1 &307805942
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +718,7 @@ GameObject:
   - component: {fileID: 307805945}
   - component: {fileID: 307805944}
   - component: {fileID: 307805943}
+  - component: {fileID: 307805946}
   m_Layer: 0
   m_Name: bitcoin (43)
   m_TagString: Coin
@@ -703,6 +789,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &307805946
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307805942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &381408820
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +814,7 @@ GameObject:
   - component: {fileID: 381408823}
   - component: {fileID: 381408822}
   - component: {fileID: 381408821}
+  - component: {fileID: 381408824}
   m_Layer: 0
   m_Name: bitcoin (45)
   m_TagString: Coin
@@ -784,6 +885,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &381408824
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381408820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &393922581
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +910,7 @@ GameObject:
   - component: {fileID: 393922584}
   - component: {fileID: 393922583}
   - component: {fileID: 393922582}
+  - component: {fileID: 393922585}
   m_Layer: 0
   m_Name: bitcoin (62)
   m_TagString: Coin
@@ -865,6 +981,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
+--- !u!64 &393922585
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393922581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &465437897
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +1058,7 @@ GameObject:
   - component: {fileID: 472458583}
   - component: {fileID: 472458582}
   - component: {fileID: 472458581}
+  - component: {fileID: 472458584}
   m_Layer: 0
   m_Name: bitcoin (47)
   m_TagString: Coin
@@ -998,6 +1129,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &472458584
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472458580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &473854211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1154,7 @@ GameObject:
   - component: {fileID: 473854214}
   - component: {fileID: 473854213}
   - component: {fileID: 473854212}
+  - component: {fileID: 473854215}
   m_Layer: 0
   m_Name: bitcoin (38)
   m_TagString: Coin
@@ -1079,6 +1225,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &473854215
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473854211}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &553510887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1250,7 @@ GameObject:
   - component: {fileID: 553510890}
   - component: {fileID: 553510889}
   - component: {fileID: 553510888}
+  - component: {fileID: 553510891}
   m_Layer: 0
   m_Name: bitcoin (56)
   m_TagString: Coin
@@ -1160,6 +1321,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: -37.334003, z: 90.00001}
+--- !u!64 &553510891
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553510887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &642786626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,6 +1346,7 @@ GameObject:
   - component: {fileID: 642786629}
   - component: {fileID: 642786628}
   - component: {fileID: 642786627}
+  - component: {fileID: 642786630}
   m_Layer: 0
   m_Name: bitcoin (30)
   m_TagString: Coin
@@ -1241,6 +1417,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &642786630
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642786626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &656907927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,6 +1442,7 @@ GameObject:
   - component: {fileID: 656907930}
   - component: {fileID: 656907929}
   - component: {fileID: 656907928}
+  - component: {fileID: 656907931}
   m_Layer: 0
   m_Name: bitcoin (37)
   m_TagString: Coin
@@ -1322,6 +1513,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &656907931
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656907927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,6 +1700,7 @@ GameObject:
   - component: {fileID: 769500016}
   - component: {fileID: 769500015}
   - component: {fileID: 769500014}
+  - component: {fileID: 769500017}
   m_Layer: 0
   m_Name: bitcoin (71)
   m_TagString: Coin
@@ -1565,6 +1771,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0.95900005, z: 90.00001}
+--- !u!64 &769500017
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769500013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &835148692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,6 +1796,7 @@ GameObject:
   - component: {fileID: 835148695}
   - component: {fileID: 835148694}
   - component: {fileID: 835148693}
+  - component: {fileID: 835148696}
   m_Layer: 0
   m_Name: bitcoin (40)
   m_TagString: Coin
@@ -1646,6 +1867,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &835148696
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835148692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &872682070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,6 +1892,7 @@ GameObject:
   - component: {fileID: 872682073}
   - component: {fileID: 872682072}
   - component: {fileID: 872682071}
+  - component: {fileID: 872682074}
   m_Layer: 0
   m_Name: bitcoin (54)
   m_TagString: Coin
@@ -1727,6 +1963,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &872682074
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872682070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &945199065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,6 +1988,7 @@ GameObject:
   - component: {fileID: 945199068}
   - component: {fileID: 945199067}
   - component: {fileID: 945199066}
+  - component: {fileID: 945199069}
   m_Layer: 0
   m_Name: bitcoin (67)
   m_TagString: Coin
@@ -1808,6 +2059,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0.9590001, z: 90.00001}
+--- !u!64 &945199069
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945199065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!43 &1010442604
 Mesh:
   m_ObjectHideFlags: 0
@@ -2122,6 +2387,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!4 &1063881375 stripped
@@ -2130,6 +2400,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1063881374}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1063881376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1063881374}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1063881377
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063881376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!1 &1066107481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,6 +2431,7 @@ GameObject:
   - component: {fileID: 1066107484}
   - component: {fileID: 1066107483}
   - component: {fileID: 1066107482}
+  - component: {fileID: 1066107485}
   m_Layer: 0
   m_Name: bitcoin (32)
   m_TagString: Coin
@@ -2211,6 +2502,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1066107485
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066107481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1073862551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,6 +2527,7 @@ GameObject:
   - component: {fileID: 1073862554}
   - component: {fileID: 1073862553}
   - component: {fileID: 1073862552}
+  - component: {fileID: 1073862555}
   m_Layer: 0
   m_Name: bitcoin (35)
   m_TagString: Coin
@@ -2292,6 +2598,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1073862555
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073862551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1127541812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,6 +2623,7 @@ GameObject:
   - component: {fileID: 1127541815}
   - component: {fileID: 1127541814}
   - component: {fileID: 1127541813}
+  - component: {fileID: 1127541816}
   m_Layer: 0
   m_Name: bitcoin (41)
   m_TagString: Coin
@@ -2373,6 +2694,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1127541816
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127541812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1132303748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,7 +2722,7 @@ GameObject:
   - component: {fileID: 1132303752}
   m_Layer: 0
   m_Name: Road Mesh Holder
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2570,6 +2905,7 @@ GameObject:
   - component: {fileID: 1212181677}
   - component: {fileID: 1212181676}
   - component: {fileID: 1212181675}
+  - component: {fileID: 1212181678}
   m_Layer: 0
   m_Name: bitcoin (70)
   m_TagString: Coin
@@ -2640,6 +2976,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0.9590001, z: 90.00001}
+--- !u!64 &1212181678
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212181674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1221001800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,6 +3001,7 @@ GameObject:
   - component: {fileID: 1221001803}
   - component: {fileID: 1221001802}
   - component: {fileID: 1221001801}
+  - component: {fileID: 1221001804}
   m_Layer: 0
   m_Name: bitcoin (33)
   m_TagString: Coin
@@ -2721,6 +3072,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1221001804
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221001800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1232510311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +3097,7 @@ GameObject:
   - component: {fileID: 1232510314}
   - component: {fileID: 1232510313}
   - component: {fileID: 1232510312}
+  - component: {fileID: 1232510315}
   m_Layer: 0
   m_Name: bitcoin (69)
   m_TagString: Coin
@@ -2802,6 +3168,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0.9590001, z: 90.00001}
+--- !u!64 &1232510315
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232510311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1255171658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,6 +3193,7 @@ GameObject:
   - component: {fileID: 1255171661}
   - component: {fileID: 1255171660}
   - component: {fileID: 1255171659}
+  - component: {fileID: 1255171662}
   m_Layer: 0
   m_Name: bitcoin (57)
   m_TagString: Coin
@@ -2883,6 +3264,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: -37.334003, z: 90.00001}
+--- !u!64 &1255171662
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255171658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1263787763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,6 +3289,7 @@ GameObject:
   - component: {fileID: 1263787766}
   - component: {fileID: 1263787765}
   - component: {fileID: 1263787764}
+  - component: {fileID: 1263787767}
   m_Layer: 0
   m_Name: bitcoin (34)
   m_TagString: Coin
@@ -2964,6 +3360,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1263787767
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263787763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1269262047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,6 +3385,7 @@ GameObject:
   - component: {fileID: 1269262050}
   - component: {fileID: 1269262049}
   - component: {fileID: 1269262048}
+  - component: {fileID: 1269262051}
   m_Layer: 0
   m_Name: bitcoin (53)
   m_TagString: Coin
@@ -3045,6 +3456,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1269262051
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269262047}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1294914650
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,6 +3481,7 @@ GameObject:
   - component: {fileID: 1294914653}
   - component: {fileID: 1294914652}
   - component: {fileID: 1294914651}
+  - component: {fileID: 1294914654}
   m_Layer: 0
   m_Name: bitcoin (60)
   m_TagString: Coin
@@ -3126,6 +3552,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: -4.399, z: 90.00001}
+--- !u!64 &1294914654
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294914650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1302009918
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,6 +3577,7 @@ GameObject:
   - component: {fileID: 1302009921}
   - component: {fileID: 1302009920}
   - component: {fileID: 1302009919}
+  - component: {fileID: 1302009922}
   m_Layer: 0
   m_Name: bitcoin (48)
   m_TagString: Coin
@@ -3207,6 +3648,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1302009922
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302009918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1309143743
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,6 +3673,7 @@ GameObject:
   - component: {fileID: 1309143746}
   - component: {fileID: 1309143745}
   - component: {fileID: 1309143744}
+  - component: {fileID: 1309143747}
   m_Layer: 0
   m_Name: bitcoin (66)
   m_TagString: Coin
@@ -3288,6 +3744,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0.9590001, z: 90.00001}
+--- !u!64 &1309143747
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309143743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &1325354020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3423,6 +3893,7 @@ GameObject:
   - component: {fileID: 1404434939}
   - component: {fileID: 1404434938}
   - component: {fileID: 1404434937}
+  - component: {fileID: 1404434940}
   m_Layer: 0
   m_Name: bitcoin (42)
   m_TagString: Coin
@@ -3493,6 +3964,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1404434940
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404434936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &1451933543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3590,6 +4075,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!4 &1451933544 stripped
@@ -3598,6 +4088,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1451933543}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1451933545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1451933543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1451933546
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451933545}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!1 &1452759330
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,6 +4119,7 @@ GameObject:
   - component: {fileID: 1452759333}
   - component: {fileID: 1452759332}
   - component: {fileID: 1452759331}
+  - component: {fileID: 1452759334}
   m_Layer: 0
   m_Name: bitcoin (61)
   m_TagString: Coin
@@ -3679,6 +4190,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
+--- !u!64 &1452759334
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452759330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1465280173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3756,6 +4281,7 @@ GameObject:
   - component: {fileID: 1493276732}
   - component: {fileID: 1493276731}
   - component: {fileID: 1493276730}
+  - component: {fileID: 1493276733}
   m_Layer: 0
   m_Name: bitcoin (36)
   m_TagString: Coin
@@ -3826,6 +4352,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1493276733
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493276729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &1518656736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3923,6 +4463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!4 &1518656737 stripped
@@ -3931,6 +4476,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1518656736}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518656738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1518656736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1518656739
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518656738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!1 &1523935903
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,6 +4507,7 @@ GameObject:
   - component: {fileID: 1523935906}
   - component: {fileID: 1523935905}
   - component: {fileID: 1523935904}
+  - component: {fileID: 1523935907}
   m_Layer: 0
   m_Name: bitcoin (68)
   m_TagString: Coin
@@ -4012,6 +4578,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0.9590001, z: 90.00001}
+--- !u!64 &1523935907
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523935903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1529853678
 GameObject:
   m_ObjectHideFlags: 0
@@ -4023,6 +4603,7 @@ GameObject:
   - component: {fileID: 1529853681}
   - component: {fileID: 1529853680}
   - component: {fileID: 1529853679}
+  - component: {fileID: 1529853682}
   m_Layer: 0
   m_Name: bitcoin (50)
   m_TagString: Coin
@@ -4093,6 +4674,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1529853682
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529853678}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &1546585531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4104,6 +4699,7 @@ GameObject:
   - component: {fileID: 1546585534}
   - component: {fileID: 1546585533}
   - component: {fileID: 1546585532}
+  - component: {fileID: 1546585535}
   m_Layer: 0
   m_Name: bitcoin (51)
   m_TagString: Coin
@@ -4174,6 +4770,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1546585535
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546585531}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &1617100322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4266,6 +4876,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Cookie
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 3f1c3384fc29a2143adf379416c2adac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cookie
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1c3384fc29a2143adf379416c2adac, type: 3}
 --- !u!4 &1617100323 stripped
@@ -4274,6 +4889,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1617100322}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1617100324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 3f1c3384fc29a2143adf379416c2adac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1617100322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1617100325
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617100324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 3f1c3384fc29a2143adf379416c2adac, type: 3}
 --- !u!1001 &1724393340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4371,6 +5006,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!4 &1724393341 stripped
@@ -4379,6 +5019,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1724393340}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1724393342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1724393340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1724393343
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724393342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!1001 &1762913485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4476,6 +5136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!4 &1762913486 stripped
@@ -4484,6 +5149,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1762913485}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1762913487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762913485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1762913488
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762913487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!1 &1799262990
 GameObject:
   m_ObjectHideFlags: 0
@@ -4495,6 +5180,7 @@ GameObject:
   - component: {fileID: 1799262993}
   - component: {fileID: 1799262992}
   - component: {fileID: 1799262991}
+  - component: {fileID: 1799262994}
   m_Layer: 0
   m_Name: bitcoin (29)
   m_TagString: Coin
@@ -4565,6 +5251,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1799262994
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799262990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &1812965524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4633,6 +5333,7 @@ GameObject:
   - component: {fileID: 1829656009}
   - component: {fileID: 1829656008}
   - component: {fileID: 1829656007}
+  - component: {fileID: 1829656010}
   m_Layer: 0
   m_Name: bitcoin (31)
   m_TagString: Coin
@@ -4703,6 +5404,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &1829656010
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829656006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &1830827281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4800,6 +5515,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!4 &1830827282 stripped
@@ -4808,6 +5528,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1830827281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1830827283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 5d71d598dce124b48823e41edd434bb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1830827281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1830827284
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830827283}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 5d71d598dce124b48823e41edd434bb1, type: 3}
 --- !u!1 &1848898576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,6 +5655,7 @@ GameObject:
   - component: {fileID: 1859543887}
   - component: {fileID: 1859543886}
   - component: {fileID: 1859543885}
+  - component: {fileID: 1859543888}
   m_Layer: 0
   m_Name: bitcoin (59)
   m_TagString: Coin
@@ -4985,6 +5726,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: -4.399, z: 90.00001}
+--- !u!64 &1859543888
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859543884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &1873525749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5065,6 +5820,7 @@ GameObject:
   - component: {fileID: 1973222279}
   - component: {fileID: 1973222278}
   - component: {fileID: 1973222277}
+  - component: {fileID: 1973222280}
   m_Layer: 0
   m_Name: bitcoin (63)
   m_TagString: Coin
@@ -5135,6 +5891,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
+--- !u!64 &1973222280
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973222276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &2003712301
 GameObject:
   m_ObjectHideFlags: 0
@@ -5183,6 +5953,7 @@ GameObject:
   - component: {fileID: 2004737036}
   - component: {fileID: 2004737035}
   - component: {fileID: 2004737034}
+  - component: {fileID: 2004737037}
   m_Layer: 0
   m_Name: bitcoin (49)
   m_TagString: Coin
@@ -5253,6 +6024,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &2004737037
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004737033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1001 &2033030884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5345,6 +6130,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Cookie
       objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 3f1c3384fc29a2143adf379416c2adac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cookie
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1c3384fc29a2143adf379416c2adac, type: 3}
 --- !u!4 &2033030885 stripped
@@ -5353,6 +6143,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2033030884}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2033030886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 3f1c3384fc29a2143adf379416c2adac,
+    type: 3}
+  m_PrefabInstance: {fileID: 2033030884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2033030887
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033030886}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 3f1c3384fc29a2143adf379416c2adac, type: 3}
 --- !u!1 &2039789093
 GameObject:
   m_ObjectHideFlags: 0
@@ -5438,6 +6248,7 @@ GameObject:
   - component: {fileID: 2108312907}
   - component: {fileID: 2108312906}
   - component: {fileID: 2108312905}
+  - component: {fileID: 2108312908}
   m_Layer: 0
   m_Name: bitcoin (44)
   m_TagString: Coin
@@ -5508,6 +6319,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &2108312908
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108312904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &2118518533
 GameObject:
   m_ObjectHideFlags: 0
@@ -5519,6 +6344,7 @@ GameObject:
   - component: {fileID: 2118518536}
   - component: {fileID: 2118518535}
   - component: {fileID: 2118518534}
+  - component: {fileID: 2118518537}
   m_Layer: 0
   m_Name: bitcoin (39)
   m_TagString: Coin
@@ -5589,6 +6415,20 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &2118518537
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118518533}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
 --- !u!1 &2131591694
 GameObject:
   m_ObjectHideFlags: 0
@@ -5600,6 +6440,7 @@ GameObject:
   - component: {fileID: 2131591697}
   - component: {fileID: 2131591696}
   - component: {fileID: 2131591695}
+  - component: {fileID: 2131591698}
   m_Layer: 0
   m_Name: bitcoin (28)
   m_TagString: Coin
@@ -5670,3 +6511,17 @@ Transform:
   m_Father: {fileID: 2039789094}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+--- !u!64 &2131591698
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131591694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1793265850592575368, guid: 7d4507993121e1b4bb66cf7bb81e5ba4, type: 3}
