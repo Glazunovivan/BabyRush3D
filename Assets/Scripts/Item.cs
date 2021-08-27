@@ -18,10 +18,6 @@ public class Item : MonoBehaviour
     private void Start()
     {
         _shop = FindObjectOfType<Shop>();
-
-
-        _lock.gameObject.SetActive(false);
-        _unlock.gameObject.SetActive(false);
         _icon.sprite = _itemData.Icon;
 
         _shop.BuyItemHandler += UpdateBorder;
@@ -31,6 +27,9 @@ public class Item : MonoBehaviour
 
     private void UpdateBorder()
     {
+        _lock.gameObject.SetActive(false);
+        _unlock.gameObject.SetActive(false);
+
         if (IsUnlock == true)
         {
             _unlock.gameObject.SetActive(true);
