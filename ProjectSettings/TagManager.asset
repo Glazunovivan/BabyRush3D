@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Coin
   - Cookie
+  - Obstacle
+  - Road
   layers:
   - Default
   - TransparentFX

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 public class ShopUI : MonoBehaviour
 {
     [SerializeField] private Text _amountCoins;
@@ -12,7 +13,6 @@ public class ShopUI : MonoBehaviour
         _amountCoins.text = _saveSystem.SaveData.Coins.ToString();
     
     }
-
 
     public void CloseShop()
     {

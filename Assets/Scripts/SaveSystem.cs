@@ -1,13 +1,12 @@
 using System;
 using System.IO;
 using UnityEngine;
-
 public class SaveSystem : MonoBehaviour
 {
     public SaveData SaveData = new SaveData();
     private string _path;
 
-    private void Awake()
+    private void Start()
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
         _path = Path.Combine(Application.persistentDataPath, "Save.json");
@@ -18,6 +17,8 @@ public class SaveSystem : MonoBehaviour
         {
             LoadSaveFile();
         }
+
+        DontDestroyOnLoad(this);
     }
 
     public void LoadSaveFile()
@@ -29,6 +30,7 @@ public class SaveSystem : MonoBehaviour
     public void Save()
     {
         Debug.Log("Сохраняемся");
+        SaveData.Coins = FindObjectOfType<Coins>().AmountCoins;
         File.WriteAllText(_path, JsonUtility.ToJson(SaveData));
     }
 
@@ -36,32 +38,39 @@ public class SaveSystem : MonoBehaviour
     {
         if (File.Exists(_path))
         {
+            Debug.Log("Файл есть");
             return true;
         }
         else
         {
             SaveData.Coins = 0;
+            Debug.Log("Файла нет");
             return false;
         }
     }
 
 #if UNITY_ANDROID && !UNITY_EDITOR
-    private void OnApplicationPause(bool pause)
-    {
-        if (pause)
-        {
-            Save();
-        }
-    }
+    //private void OnApplicationPause(bool pause)
+    //{
+    //    if (pause)
+    //    {
+    //        Save();
+    //    }
+    //}
 #endif
-    private void OnApplicationQuit()
-    {
-        Save();
-    }
+    //private void OnApplicationQuit()
+    //{
+    //    Save();
+    //}
 
     public void AppQuit()
     {
         Application.Quit();
+    }
+
+    private void OnDestroy()
+    {
+        Save();
     }
 }
 

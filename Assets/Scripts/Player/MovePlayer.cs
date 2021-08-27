@@ -1,6 +1,6 @@
-﻿using PathCreation;
-using System;
+﻿using System;
 using UnityEngine;
+using PathCreation;
 
 [RequireComponent(typeof(Animator))]
 public class MovePlayer : MonoBehaviour
@@ -8,13 +8,14 @@ public class MovePlayer : MonoBehaviour
     private PathCreator _pathCreator;
     private float _distanceTravelled;
     private Slide _slideComponent;
-    private Coins _coinsComponent;
 
     [SerializeField] private float _speed;
     [SerializeField] private bool _isRun = false;
 
     //для движения с rigidbody
     private Rigidbody _rigidbody;
+
+    private StatePlayer _statePlayer;
 
     private void Start()
     {
@@ -26,9 +27,10 @@ public class MovePlayer : MonoBehaviour
                                          _pathCreator.path.GetPointAtDistance(_distanceTravelled).z);
         _slideComponent = GetComponentInChildren<Slide>();
         _slideComponent.OnDisable();
-
+        _statePlayer = GetComponentInChildren<StatePlayer>();
         //событие
         FindObjectOfType<PlayerCollider>().finish += StopRun;
+        FindObjectOfType<PlayerCollider>().obstacle += StopRunIntoObstacle;
     }
 
     private void Update()
@@ -38,6 +40,7 @@ public class MovePlayer : MonoBehaviour
             TransformPositionPlayer();
         }
     }
+
     private void TransformPositionPlayer()
     {
         _distanceTravelled +=  _speed * Time.deltaTime;
@@ -51,14 +54,17 @@ public class MovePlayer : MonoBehaviour
     {
         _isRun = true;
         _slideComponent.OnEnable();
+        _statePlayer.Run();
     }
-    public void StopRun()
+
+    private void StopRun()
     {
         _rigidbody.velocity = new Vector3(0,0,0);
         _slideComponent.OnEnable();
         _isRun = false;
     }
-    public void StopRunIntoObstacle()
+
+    private void StopRunIntoObstacle()
     {
         _isRun = false;
     }
@@ -66,5 +72,6 @@ public class MovePlayer : MonoBehaviour
     private void OnDisable()
     {
         FindObjectOfType<PlayerCollider>().finish -= StopRun;
+        FindObjectOfType<PlayerCollider>().obstacle -= StopRunIntoObstacle;
     }
 }
