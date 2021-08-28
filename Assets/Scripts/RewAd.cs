@@ -1,20 +1,20 @@
 using System;
 using UnityEngine;
 using GoogleMobileAds.Api;
+using UnityEngine.UI;
 
 //Видео-реклама, реклама с вознаграждением
 public class RewAd : MonoBehaviour
 {
-    private RewardedAd _rewardedAd;
-
+    public RewardedAd RewardedAd;
     //ключ рекламы поменять на свой (из аккаунта ADMob)
     //для теста использовать ТЕСТОВЫЕ значения
     private const string _rewardID = "ca-app-pub-3940256099942544/5224354917";
 
     private void Start()
     {
-        _rewardedAd = new RewardedAd(_rewardID);
-        _rewardedAd.OnAdClosed += HandleRewardedAdClosed;
+        RewardedAd = new RewardedAd(_rewardID);
+        RewardedAd.OnAdClosed += HandleRewardedAdClosed;
         CreateAndLoadRewardedAd();
     }
 
@@ -26,15 +26,15 @@ public class RewAd : MonoBehaviour
     private void CreateAndLoadRewardedAd()
     {
         AdRequest request = new AdRequest.Builder().Build();
-        _rewardedAd.LoadAd(request);
+        RewardedAd.LoadAd(request);
     }
 
     //Показ рекламы
     public void ShowAdversting()
     {
-        if (_rewardedAd.IsLoaded())
+        if (RewardedAd.IsLoaded())
         {
-            _rewardedAd.Show();
+            RewardedAd.Show();
         }
     }
 }

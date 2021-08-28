@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
@@ -8,18 +10,23 @@ public class Shop : MonoBehaviour
     private SaveSystem _saveSystem;
 
     [SerializeField] private RewAd _adversting;
+    [SerializeField] private GameObject _buttonAdvesting;
 
     private void Start()
     {
         _shopCategory = FindObjectOfType<ShopCategory>();
-        _saveSystem = FindObjectOfType<SaveSystem>();        
+        _saveSystem = FindObjectOfType<SaveSystem>();
+
+        _buttonAdvesting.GetComponent<Button>().onClick.AddListener(UnlockForAdversting);
     }
 
     public void UnlockForAdversting()
     {
+        _buttonAdvesting.GetComponent<Button>().interactable = false;
         _adversting.ShowAdversting();
         RandomItem();
         _saveSystem.Save();
+        _buttonAdvesting.GetComponent<Button>().interactable = true;
     }
 
     public void UnlockForCoins()
