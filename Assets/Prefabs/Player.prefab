@@ -21083,6 +21083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 1.5
   _isRun: 0
+  _secondBoostSpeed: 2
+  _multiplierBoostSpeed: 1.5
 --- !u!114 &4094594323059228522
 MonoBehaviour:
   m_ObjectHideFlags: 0

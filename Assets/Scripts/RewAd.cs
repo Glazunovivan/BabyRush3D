@@ -1,6 +1,6 @@
+using System;
 using UnityEngine;
 using GoogleMobileAds.Api;
-using System;
 
 //Видео-реклама, реклама с вознаграждением
 public class RewAd : MonoBehaviour

@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using PathCreation;
+using System.Collections;
 
 [RequireComponent(typeof(Animator))]
 public class MovePlayer : MonoBehaviour
@@ -9,8 +10,13 @@ public class MovePlayer : MonoBehaviour
     private float _distanceTravelled;
     private Slide _slideComponent;
 
+    [Tooltip("Скорость перемещения")]
     [SerializeField] private float _speed;
     [SerializeField] private bool _isRun = false;
+    [Tooltip("Время на ускорение (в секундах, по умолчанию 0)")]
+    [SerializeField] private float _secondBoostSpeed = 0;
+    [Tooltip("Множитель ускорения")]
+    [SerializeField] private float _multiplierBoostSpeed = 1f;
 
     //для движения с rigidbody
     private Rigidbody _rigidbody;
@@ -31,7 +37,10 @@ public class MovePlayer : MonoBehaviour
         //событие
         FindObjectOfType<PlayerCollider>().finish += StopRun;
         FindObjectOfType<PlayerCollider>().obstacle += StopRunIntoObstacle;
+        //ускорение
+        FindObjectOfType<PlayerCollider>().cookieTake += BoostSpeed;
     }
+
 
     private void Update()
     {
@@ -39,6 +48,12 @@ public class MovePlayer : MonoBehaviour
         {
             TransformPositionPlayer();
         }
+    }
+    private void OnDisable()
+    {
+        FindObjectOfType<PlayerCollider>().finish -= StopRun;
+        FindObjectOfType<PlayerCollider>().obstacle -= StopRunIntoObstacle;
+        FindObjectOfType<PlayerCollider>().cookieTake -= BoostSpeed;
     }
 
     private void TransformPositionPlayer()
@@ -68,10 +83,14 @@ public class MovePlayer : MonoBehaviour
     {
         _isRun = false;
     }
-
-    private void OnDisable()
+    private void BoostSpeed()
     {
-        FindObjectOfType<PlayerCollider>().finish -= StopRun;
-        FindObjectOfType<PlayerCollider>().obstacle -= StopRunIntoObstacle;
+        StartCoroutine(BoostingSpeed());
+    }
+    private IEnumerator BoostingSpeed()
+    {
+        _speed += _multiplierBoostSpeed;
+        yield return new WaitForSeconds(_secondBoostSpeed);
+        _speed -= _multiplierBoostSpeed; 
     }
 }
