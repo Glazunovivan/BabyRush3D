@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-
 public class SaveSystem : MonoBehaviour
 {
     public SaveData SaveData = new SaveData();
     private string _path;
 
-    private void Start()
+    private void Awake()
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
         _path = Path.Combine(Application.persistentDataPath, "Save.json");
@@ -47,7 +46,7 @@ public class SaveSystem : MonoBehaviour
         else
         {
             SaveData.Coins = 0;
-            SaveData.IDPurchasedItems = new List<int>();
+            SaveData.NameUnlockedItems = new List<string>();
             Debug.Log("Ôאיכא םוע");
             return false;
         }
@@ -82,6 +81,6 @@ public class SaveSystem : MonoBehaviour
 public class SaveData
 {
     public uint Coins;
-    public List<int> IDPurchasedItems;
+    public List<string> NameUnlockedItems;
 }
 
